@@ -29,7 +29,7 @@ pub const SPAM_CLASSIFIER_KEY: &[u8] = "STALWART_SPAM_CLASSIFIER_MODEL.lz4".as_b
 // SPDX-License-Identifier: LicenseRef-SEL
 #[cfg(feature = "enterprise")]
 const DEFAULT_WEBADMIN_URL: &str =
-    "https://github.com/stalwartlabs/webadmin/releases/latest/download/webadmin.zip";
+    "https://github.com/Cryme/webadmin/releases/latest/download/webadmin.zip";
 // SPDX-SnippetEnd
 
 #[cfg(not(feature = "enterprise"))]
