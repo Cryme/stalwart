@@ -308,6 +308,18 @@ fn build_dns_updater(config: &mut Config, acme_id: &str) -> Option<DnsUpdater> {
             )
         })
         .ok(),
+        "regru" => DnsUpdater::new_regru(
+            config
+                .value_require(("acme", acme_id, "username"))?
+                .trim()
+                .to_string(),
+            config
+                .value_require(("acme", acme_id, "secret"))?
+                .trim()
+                .to_string(),
+            timeout.into(),
+        )
+        .into(),
         _ => {
             config.new_parse_error(("acme", acme_id, "provider"), "Unsupported provider");
             None

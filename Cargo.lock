@@ -1938,9 +1938,8 @@ dependencies = [
 
 [[package]]
 name = "dns-update"
-version = "0.1.6"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8fb12339544bc327ee50abbb4f522e3367216f5ccf6240c01ca4018d17a88ea2"
+version = "0.1.7"
+source = "git+https://github.com/Cryme/dns-update#5b66f01fdbe1a151ec2377883e9d115ffd16fe27"
 dependencies = [
  "hickory-client",
  "reqwest",
